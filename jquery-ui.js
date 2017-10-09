@@ -4084,7 +4084,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 				height: el.height()
 			};
 
-		this.originalSize = this._helper ? {
+		this.originalSize = o.outerWidth || this._helper ? {
 				width: el.outerWidth(),
 				height: el.outerHeight()
 			} : {
